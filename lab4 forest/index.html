@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th onClick="sortTable(0)">FirstName</th>
+            <th onClick="sortTable(1)">LastName</th>
+            <th onClick="sortTable(2)">Age</th>
+        </tr>
+        <tbody id="sort-table" class="table">
+            <tr class="row">
+                <td>Doru</td>
+                <td>Bica</td>
+                <td>20</td>
+            </tr>
+            <tr class="row">
+                <td>Gabriel</td>
+                <td>Cernat</td>
+                <td>21</td>
+            </tr>
+            <tr class="row">
+                <td>Maic</td>
+                <td>Bucur</td>
+                <td>25</td>
+            </tr>
+            <tr class="row">
+                <td>Mihai</td>
+                <td>Matei</td>
+                <td>48</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button onclick="deleteThirdColumn()">Delete Age Column</button>
+
+    <script src="./tableSort.js"></script>
+</body>
+</html>

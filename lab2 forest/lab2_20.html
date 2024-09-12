@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="D:\teme sem2 an2\lab2 forest\favicon.ico">
+<title>The long boi</title>
+<style>
+  body {
+    font-family: Times New Roman;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .menu-item {
+    font-size: 20px;
+    margin: 5px;
+    color: red; /* blurred color */
+    transition: transform 0.5s, font-size 0.5s, color 0.5s, filter 0.5s; /* added filter property for blur effect */
+    cursor: pointer;
+    filter: blur(3px); /* initial blur effect */
+  }
+
+  .menu-item:hover {
+    font-size: 24px; /* increase font size on hover */
+    color: black;
+    filter: blur(0); /* remove blur effect on hover */
+  }
+
+  .menu-item:hover ~ .menu-item {
+    opacity: 0;
+  } 	
+</style>
+</head>
+<body>
+
+<div id="menu">
+  <div class="menu-item">He has become</div>
+  <div class="menu-item">the long boi</div>
+  <div class="menu-item">but how are he do it?</div>
+  <div class="menu-item">clicc here to</div>
+  <div class="menu-item">find out</div>
+</div>
+
+</body>
+</html>
